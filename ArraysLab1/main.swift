@@ -133,14 +133,14 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
 //Warning: The second element is equivalent to the first index, since we begin counting from 0. Think about it, it's tricky. 0 is the first element and 1 is the second element.
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
-
-
+registrationList.insert("Charlie" , at: 1)
+print(registrationList)
 
  print("\n")
  
 print("***Example for 1.4")
 //You can identify a particular portion of an array by adding the element number with name of the array. This is called subscripting.
-registrationList[1] = "Charlie1"
+registrationList[1] = "Charlie"
 print(registrationList)
 
 print("\n")
@@ -150,16 +150,18 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
  //See the example above and remember the sixth element is the fifth index.
 // registrationList[1] = "Charlie1"
 // print(registrationList)
-
-
+registrationList[5] = "Rebecca"
+print(registrationList)
  print("\n")
  
  
 print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
-
- 
+registrationList.removeLast()
+let deletedItem = "Rebecca"
+print(registrationList)
+print(deletedItem)
 print("\n")
 
 print("***PROBLEM 2.0 : FITNESS TRACKING")
@@ -170,9 +172,12 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  */
 //Print all three of the arrays to make sure it outputs in the console.
 
-
-
-
+var walkingChallenge: [String] = ["Walk for thirty minutes, 7 times a week", ""]
+var runningChallenge: [String] = ["e"]
+var liftingChallenge: [String] = ["d"]
+print(walkingChallenge)
+print(runningChallenge)
+print(liftingChallenge)
 print("\n")
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
